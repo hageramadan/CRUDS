@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>CRUDS</title>
+    </head>
+    <body>
+        <div class="container  mx-auto my-5 w-75">
+            <div class="bg-danger text-white" id="errorP"></div>
+            <label for="" class="mb-2">productName:</label>
+            <input id="productName" class="form-control" type="text">
+            <small class="text-muted">productName must starts uppercase</small>
+             <br>
+            <label for="" class="mb-2 mt-3">productPrice:</label>
+            <input id="productPrice" class="form-control" type="number">
+            <small class="text-muted">productNumber must</small>
+            <br>
+            <label for="" class="mb-2 mt-3">productcategory:</label>
+            <input id="productCategory" class="form-control" type="text">
+            <small class="text-muted">productName must starts uppercase</small>
+            <br>
+            <label for="" class="mb-2 mt-3">productDesc:</label>
+            <textarea  id="productDesc" class="form-control"></textarea>
+            <small class="text-muted">productName must starts uppercase</small>
+            <br>
+            <button onclick="addProduct()" class="btn btn-primary mt-3" id="productBtn">add Product</button>
+              
+             <input id="searchBtn" onkeyup="searchProduct(this.value)" class="form-control mt-5 w-75 mx-auto" type="text" placeholder="search with productName">
+             <table class="table  m-5 mx-auto text-center">
+                <thead>
+                    <th>index</th>
+                    <th>name</th>
+                    <th>price</th>
+                    <th>category</th>
+                    <th>desc</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </thead>
+                <tbody id="tBody" >
+                
+                </tbody>
+             </table>
+        </div>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/javaS.js"></script>
+    </body>
+</html>
